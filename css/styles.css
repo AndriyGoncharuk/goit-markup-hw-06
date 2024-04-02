@@ -916,6 +916,7 @@ flex-direction: column;
 .footer-form {
     display: flex;
     flex-direction: column;
+    gap: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1053,6 +1054,12 @@ flex-direction: column;
         width: 408px;
         min-height: 584px;
         padding: 72px 24px 24px 24px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .modal {
+        
     }
 }
 
