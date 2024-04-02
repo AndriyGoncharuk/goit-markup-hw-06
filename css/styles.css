@@ -520,6 +520,7 @@ img {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     max-width: 264px;
+    margin: 0 auto;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
@@ -723,6 +724,32 @@ img {
     border-top: none; 
 }
 
+
+
+@media screen and (max-width: 1157px) {
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;        
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .footer-top {
+        display: flex;
+        gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .footer-top {
+        display: flex;
+        gap: 120px;
+    }
+}
+
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -743,11 +770,24 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #F4F4FD;
+text-align: left;
 }
 
 .footer {
     background: #2E2F42;
-    padding: 100px 0;
+    padding: 96px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 96px 0 96px 92px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .footer {
+        padding: 100px 0;
+    }
 }
 
 .footer-text {
@@ -765,15 +805,31 @@ color: #F4F4FD;
 }
 
 .footer-wrap {
-    margin-right: 120px;
+    text-align: center;
+    margin-bottom: 72px;
 }
 
-.footer-social {   
-    display: inline-block;
+@media screen and (min-width: 768px) {
+    .footer-wrap {
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
+
+.footer-social { 
+    display: flex;
+    justify-content: space-between;
+flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-social {
+        display: inline-block;
     align-items: center;
     justify-content: center;
     margin: 0;
     margin-right: auto;
+    }
 }
 
 .footer-social-head {
@@ -783,11 +839,25 @@ color: #F4F4FD;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-social-head {
+      text-align: left;
+    }
 }
 
 .footer-social-list {
     display: flex;
     gap: 16px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-social-list {
+      
+    }
 }
 
 .footer-icons {
@@ -813,6 +883,19 @@ color: #F4F4FD;
     fill: #f4f4fd;
 }
 
+@media screen and (min-width: 768px) {
+    .subscribe {
+        display: flex;
+    flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .subscribe {
+        margin-left: auto;
+    }
+}
+
 .subscribe-title {
     margin-bottom: 16px;
     font-weight: 500;
@@ -821,22 +904,36 @@ color: #F4F4FD;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .subscribe-title {
+        text-align: left;
+    }
 }
 
 .footer-form {
     display: flex;
-    gap: 24px;  
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-form {
+        flex-direction: row;
+        gap: 24px;
+    }
 }
 
 .footer-input-btn {
-  display: flex;
+  display: block;
 }
 
 .footer-input {
     padding-left: 16px;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
-    width: 264px;
+    width: 288px;
     height: 40px;
     font-weight: 400;
     font-size: 12px;
@@ -845,6 +942,12 @@ color: #F4F4FD;
     color: #FFFFFF;
     background-color: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 768px) {
+    .footer-input {
+        width: 264px;
+    }
 }
 
 .footer-input::placeholder {
@@ -868,7 +971,8 @@ color: #F4F4FD;
     color: #FFFFFF;
     border-radius: 4px;
     padding: 8px 24px;
-    min-width: 165px;
+    margin: 0 auto;
+    max-width: 165px;
     height: 40px;
     background-color: #4D5AE5;
     right: 0;
@@ -878,6 +982,13 @@ color: #F4F4FD;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media screen and (min-width: 768px) {
+    .footer-send-btn {
+        min-width: 165px;
+    }
+}
+
 
 .footer-send-btn:hover {
     background-color: #404BBF;
