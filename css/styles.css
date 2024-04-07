@@ -245,6 +245,12 @@ img {
     justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+    .mob-menu {
+        display: none;
+    }
+}
+
 .mob-close-btn {
     margin-left: auto;
     width: 24px;
@@ -274,8 +280,9 @@ img {
     color: #2E2F42;
 }
 
-.mob-address-menu {
+.mob-address {
     margin-bottom: 48px;
+    font-style: normal;
 }
 
 .mob-address-menu-item:not(:last-child) {
